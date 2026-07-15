@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاختبار النصفي | الفقه للصف العاشر</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        arabic: ['"Traditional Arabic"', '"Amiri"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        luxury: {
+                            900: '#0B0F19',
+                            800: '#151B2B',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            goldhover: '#B5952F',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .arabic-text, body, h1, h2, h3, h4, p, span, a, li, td, th, label, input, select, textarea, button {
+            font-family: 'Traditional Arabic', 'Amiri', 'Scheherazade New', serif;
+        }
+        body {
+            font-size: 1.15rem;
+            line-height: 1.9;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Traditional Arabic', 'Amiri', serif;
+            font-weight: 700;
+        }
+        .custom-radio:checked + div {
+            border-color: #D4AF37;
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+        .custom-radio:checked + div .radio-dot {
+            background-color: #D4AF37;
+            border-color: #D4AF37;
+        }
+        .case-box {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(30, 41, 59, 0.6) 100%);
+            border-right: 4px solid #D4AF37;
+        }
+        .rtl-flip {
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body class="bg-luxury-900 text-gray-300 font-arabic antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2 text-gray-300 hover:text-luxury-gold transition-colors">
+                        <i class="fa-solid fa-book-quran text-luxury-gold"></i> 
+                        <span class="font-bold text-white">الفقه للصف العاشر</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-6 space-x-reverse text-sm">
+                    <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors">الرئيسية</a>
+                    <a href="index.html#kurikulum" class="text-gray-400 hover:text-luxury-gold transition-colors">المنهج</a>
+                    <a href="#" class="text-luxury-gold font-semibold">الاختبار النصفي</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Header UTS -->
+        <div class="text-center mb-10">
+            <div class="inline-flex items-center gap-3 px-6 py-2 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-sm font-semibold mb-4">
+                <i class="fa-solid fa-file-pen"></i>
+                <span>الاختبار النصفي للفصل الدراسي - اللقاء الثامن</span>
+            </div>
+            <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">
+                <span class="gold-gradient-text">الاختبار النصفي</span>
+            </h1>
+            <h2 class="text-2xl text-luxury-goldlight mb-4">الفقه - الطهارة</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed text-sm">
+                المادة: تعريف الإمام الشافعي، الوضوء، سنن الوضوء، نواقض الوضوء، أحكام الغسل، فرائض الغسل، وسنن الغسل.
+                <br>مستوى التفكير: <span class="text-luxury-gold font-bold">HOTS (التفكير ذو المستوى العالي)</span>
+            </p>
+            <div class="flex justify-center gap-6 mt-6 text-sm text-luxury-gold font-semibold">
+                <span><i class="fa-regular fa-clock mr-1"></i> الوقت: ٩٠ دقيقة</span>
+                <span>|</span>
+                <span><i class="fa-solid fa-list-ol mr-1"></i> ٢٠ سؤال اختيار من متعدد</span>
+                <span>|</span>
+                <span><i class="fa-solid fa-pen-to-square mr-1"></i> ٥ أسئلة مقالية</span>
+                <span>|</span>
+                <span><i class="fa-solid fa-star mr-1"></i> المجموع: ٣٠٠ نقطة</span>
+            </div>
+        </div>
+
+        <!-- Petunjuk Pengerjaan -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10 border-r-4 border-luxury-gold">
+            <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-luxury-gold"></i> تعليمات الاختبار
+            </h3>
+            <ul class="space-y-2 text-gray-300 text-sm">
+                <li class="flex gap-2"><i class="fa-solid fa-check text-luxury-gold mt-1"></i> <span>اقرأ كل سؤال بعناية، خاصة النصوص النظرية أو الحالات المقدمة.</span></li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-luxury-gold mt-1"></i> <span>اختر الإجابة الأكثر صحة من بين الخيارات الخمسة (أ، ب، ج، د، هـ).</span></li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-luxury-gold mt-1"></i> <span>كل سؤال اختيار من متعدد vale ١٠ نقاط (المجموع ٢٠٠ نقطة).</span></li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-luxury-gold mt-1"></i> <span>كل سؤال مقالي vale ٢٠ نقطة (المجموع ١٠٠ نقطة).</span></li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-luxury-gold mt-1"></i> <span>املأ البيانات الشخصية (الاسم، رقم الطالب، الفصل) قبل البدء.</span></li>
+                <li class="flex gap-2"><i class="fa-solid fa-check text-luxury-gold mt-1"></i> <span>اعتمد على التحليل والاستنتاج، ليس فقط الحفظ.</span></li>
+            </ul>
+        </div>
+
+        <!-- Form Data Siswa -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10">
+            <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-user-graduate text-luxury-gold"></i> بيانات الطالب
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">الاسم الكامل <span class="text-red-500">*</span></label>
+                    <input type="text" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="أدخل الاسم الكامل">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">رقم الطالب (NIS) <span class="text-red-500">*</span></label>
+                    <input type="text" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="أدخل رقم الطالب">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">تاريخ الاختبار</label>
+                    <input type="date" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">الفصل <span class="text-red-500">*</span></label>
+                    <select class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                        <option value="">اختر الفصل</option>
+                        <option value="X-1">الفصل العاشر-١</option>
+                        <option value="X-2">الفصل العاشر-٢</option>
+                        <option value="X-3">الفصل العاشر-٣</option>
+                    </select>
+                </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-4 italic">* تأكد من صحة الاسم الكامل ورقم الطالب قبل الإجابة على الأسئلة المقالية.</p>
+        </div>
+
+        <!-- Bagian A: Pilihan Ganda HOTS -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10">
+            <div class="flex items-center justify-between mb-6 border-b border-luxury-gold/20 pb-4">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-list-ol text-luxury-gold"></i> القسم أ - اختيار من متعدد (HOTS)
+                </h3>
+                <span class="text-sm text-luxury-gold font-semibold">٢٠ سؤال | ١٠ نقاط/سؤال | المجموع: ٢٠٠</span>
+            </div>
+            <p class="text-red-400 text-sm mb-6 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> أكمل جميع الأسئلة العشرين! كل سؤال يحتوي على نص نظري أو حالة للتحليل.</p>
+
+            <div class="space-y-8">
+
+                <!-- Soal 1 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> النص النظري:</p>
+                        <p class="text-gray-300 text-sm">
+                            قال الإمام الشافعي في <em>الرسالة</em>: "إذا جاء الحديث الصحيح فهو مذهبي". كما أن للإمام الشافعي قولين: <strong>القول القديم</strong> (في العراق) و<strong>القول الجديد</strong> (في مصر). في القول القديم، لمس المرأة الأجنبية ينقض الوضوء مطلقاً، أما في القول الجديد فلا ينقض إلا بشهوة.
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١. بناءً على النص أعلاه، الاستنتاج الأصح حول منهج الإمام الشافعي في الاجتهاد هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) الإمام الشافعي يتبع الرأي الشخصي دون الرجوع إلى الأدلة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) الإمام الشافعي يغيّر رأيه بناءً على ظهور أدلة جديدة واختلاف البيئة والزمان</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) الإمام الشافعي يقلد الإمام أبا حنيفة في جميع أحكامه</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) الإمام الشافعي يرفض الأحاديث النبوية في اجتهاده</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) الإمام الشافعي يعتمد على العقل وحده دون النصوص الشرعية</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 2 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            أحمد طالب في مدرسة دينية ليمو جوراي، نام في الفصل أثناء درس الفقه وهو جالس على كرسي ثابت غير مهتز. عندما استيقظ، تساءل هل يجب عليه إعادة الوضوء؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٢. بناءً على المذهب الشافعي، التحليل الأصح لحالة أحمد هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) وضوؤه انتقض لأنه نام، ويجب عليه إعادة الوضوء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) وضوؤه لم ينتقض لأن النوم على كرسي ثابت لا ينقض الوضوء في الرأي الراجح، لأن الدبر يبقى منطبقاً</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) وضوؤه انتقض لأنه كان في حالة يقظة ثم نام</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) وضوؤه لم ينتقض لأن النوم في الفصل لا يحسب نوماً حقيقياً</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب عليه التيمم بدلاً من الوضوء</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 3 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            فاطمة توضأت للصلاة، لكنها نسيت مسح رأسها. بعد أن غسلت قدميها، تذكرت أنها لم تمسح رأسها. فماذا يجب عليها أن تفعل؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٣. التحليل الفقهي لحالة فاطمة وفق المذهب الشافعي هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) تكفي أن تمسح رأسها فقط وتكمل الصلاة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) وضوؤها صحيح ولا شيء عليها لأن مسح الرأس سنة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يجب عليها إعادة الوضوء من البداية لأن ركن الترتيب لم يتحقق</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يجب عليها التيمم بدلاً من الوضوء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) تكفي أن تعيد غسل القدمين فقط</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 4 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            في مدرسة دينية ليمو جوراي، يوجد وعاء ماء توضأ منه طالب قبل قليل. جاء طالب آخر يريد أن يتوضأ من نفس الوعاء.
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٤. حكم الماء المتبقي في الوعاء (الماء المستعمل) وفق المذهب الشافعي هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) طاهر ومطهر، يجوز استعماله للوضوء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) طاهر ولكن غير مطهر، لا يجوز استعماله للوضوء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) نجس ويجب التخلص منه</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) مكروه استعماله ولكن يصح الوضوء به</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجوز استعماله للشرب فقط</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 5 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            خالد احتلم (خرج منه المني) في نهار شهر رمضان بعد صلاة الفجر. تساءل خالد: هل صيامه صحيح أم باطل؟ وهل يجب عليه شيء؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٥. التحليل الفقهي لحالة خالد هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) صيامه باطل ويجب عليه القضاء والكفارة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) صيامه صحيح لأن خروج المني لم يكن متعمداً، ولكن يجب عليه الغسل للصلاة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) صيامه باطل ويجب عليه القضاء فقط بدون كفارة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) لا شيء عليه لأن الاحتلام في رمضان معفو عنه</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب عليه الإطعام فقط بدون قضاء</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 6 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            بعد أن اغتسل سعيد من الجنابة، لاحظ أن هناك جزءاً صغيراً تحت إبطه لم يصل إليه الماء بسبب الشعر الكثيف. فما حكم غسله؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٦. التحليل الفقهي لحالة سعيد هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) غسله صحيح لأن الجزء الصغير معفو عنه</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) غسله غير صحيح، يجب عليه إعادة الغسل لأن ركن تعميم الماء (الشعول) لم يتحقق</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) غسله صحيح ولكن مكروه</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يكفيه أن يمسح الجزء الذي لم يصل إليه الماء فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب عليه التيمم بدلاً من الغسل</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 7 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            في منطقة جبلية نائية، لا يوجد ماء إلا بقدر كافٍ للشرب فقط. دخل وقت الصلاة، فماذا يجب على المسلمين هناك؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٧. التحليل الفقهي للحالة أعلاه هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) يجب عليهم استعمال الماء للشرب والطهارة معاً</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) يجوز لهم التيمم لأن حفظ النفس (الشرب) مقدم على الطهارة بالماء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يسقط عنهم الصلاة حتى يجدوا ماء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يجب عليهم استعمال الماء للطهارة أولاً</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب عليهم الجمع بين الصلات بدون طهارة</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 8 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> النص النظري:</p>
+                        <p class="text-gray-300 text-sm">
+                            روى الإمام مسلم عن أبي هريرة رضي الله عنه أن رسول الله ﷺ قال: "مَنْ تَوَضَّأَ فَأَحْسَنَ الْوُضُوءَ خَرَجَتْ خَطَايَاهُ مِنْ جَسَدِهِ حَتَّى تَخْرُجَ مِنْ ظُفْرِ يَدِهِ".
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٨. الاستنتاج الأعمق من الحديث الشريف هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) الوضوء يزيل الأوساخ الظاهرة فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) إتقان الوضوء (بأركانه وسننه) له أثر روحي في تكفير الذنوب الصغيرة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) الوضوء يكفر الذنوب الكبيرة والصغيرة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) الوضوء واجب فقط عند الصلاة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) الوضوء يرفع الدرجات فقط بدون محو الذنوب</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 9 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            سارة توضأت ونسيت قراءة البسملة في البداية. تذكرت ذلك بعد أن غسلت وجهها ويديها. فما الحكم؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٩. وفق المذهب الشافعي، التحليل الأصح لحالة سارة هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) وضوؤها باطل ويجب إعادة الوضوء من البداية</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) وضوؤها صحيح، ويستحب لها قراءة البسملة عند التذكر لأن البسملة سنة وليست ركناً</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) وضوؤها صحيح ولكن يجب عليها الإعادة بعد الصلاة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يجب عليها التيمم بدلاً من الوضوء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) وضوؤها مكروه ولا تصح به الصلاة</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 10 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            محمد يتوضأ وهو صائم في رمضان. هل يجوز له المبالغة في المضمضة والاستنشاق؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٠. التحليل الفقهي لحالة محمد هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) يجوز المبالغة مطلقاً لأن المضمضة سنة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) لا يجوز المبالغة في الاستنشاق خوفاً من وصول الماء إلى الحلق فيبطل الصوم</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يجب ترك المضمضة والاستنشاق مطلقاً للصائم</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) المبالغة واجبة للصائم لإتمام الوضوء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) المبالغة مكروه في جميع الأحوال</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 11 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            امرأة انتهت من حيضها، لكنها لم تجد ماءً للغسل إلا بعد مرور وقت العصر. فهل يجب عليها قضاء صلاة الظهر والعصر؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١١. التحليل الفقهي لحالة المرأة هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q11" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) يجب عليها قضاء الظهر والعصر معاً</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q11" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) لا يجب عليها القضاء لأن تأخر الغسل لعذر (عدم وجود الماء)، فتصلي العصر فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q11" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يجب عليها قضاء جميع الصلوات التي فاتتها في أيام الحيض</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q11" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) لا يجب عليها شيء لأن المرأة الحائض معفاة من الصلاة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q11" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب عليها الإطعام بدلاً من القضاء</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 12 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            زوجان التقى الختانان بينهما لكن لم يخرج المني. فهل يجب عليهما الغسل؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٢. وفق المذهب الشافعي، الحكم الفقهي للحالة هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q12" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) لا يجب الغسل لأن المني لم يخرج</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q12" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) يجب الغسل عليهما بمجرد التقاء الختانين، ولو لم يخرج المني</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q12" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يجب الغسل على الزوج فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q12" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يكفي الوضوء بدلاً من الغسل</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q12" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب التيمم بدلاً من الغسل</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 13 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            يوسف توضأ ثم مسّ فرجه بدون حائل. ثم تذكر أنه نسي مسح أذنيه في الوضوء. فماذا يجب عليه؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٣. التحليل الفقهي لحالة يوسف وفق المذهب الشافعي هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q13" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) وضوؤه انتقض لمس الفرج، ويجب إعادة الوضوء كاملة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q13" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) وضوؤه صحيح لأن مسح الأذنين سنة، ومس الفرج أيضاً لا ينقض</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q13" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يكفي أن يمسح أذنيه فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q13" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) وضوؤه انتقض لمس الفرج فقط، ومسح الأذنين ليس واجباً</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q13" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب عليه التيمم</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 14 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> النص النظري:</p>
+                        <p class="text-gray-300 text-sm">
+                            الإمام الشافعي نشأ يتيماً في مكة، وحفظ القرآن وهو صغير، ثم رحل إلى المدينة ليلتقي بالإمام مالك، وإلى العراق ليلتقي بطلاب أبي حنيفة، ثم استقر في مصر حيث غيّر بعض آرائه (القول الجديد).
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٤. الدرس الأهم من سيرة الإمام الشافعي للطلاب في العصر الحديث هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q14" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) ضرورة التقليد الأعمى للأئمة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q14" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) أهمية الرحلة في طلب العلم، والانفتاح على المذاهب، والمرونة في تغيير الرأي عند ظهور الدليل</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q14" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) الثبات على الرأي الأول مهما كانت الأدلة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q14" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) الاكتفاء بالعلم من الكتب بدون معلم</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q14" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) رفض جميع المذاهب الأخرى</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 15 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            عبد الله أراد أن يغتسل من الجنابة، فدخل الحمام ونية الغسل مع غسل الجسم العادي بدون ترتيب خاص. فهل غسله صحيح؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٥. التحليل الفقهي لحالة عبد الله وفق المذهب الشافعي هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q15" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) غسله صحيح لأن النية حصلت وعمم الماء على جسده</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q15" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) غسله باطل لأنه لم يتوضأ قبل الغسل</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q15" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) غسله باطل لأن النية يجب أن تكون باللسان</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q15" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) غسله مكروه ويجب الإعادة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q15" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) غسله صحيح ولكن يجب عليه الإعادة في اليوم التالي</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 16 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            شخص ارتد عن الإسلام ثم تاب وعاد إلى الإسلام. هل يجب عليه الغسل؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٦. التحليل الفقهي للحالة أعلاه هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q16" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) لا يجب الغسل لأن الإسلام يجبّ ما قبله</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q16" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) يجب عليه الغسل عند العودة إلى الإسلام تطهيراً وإزالةً للخبث المعنوي</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q16" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يكفي الوضوء بدلاً من الغسل</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q16" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يجب عليه التيمم</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q16" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب عليه إعادة الشهادتين فقط</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 17 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            في يوم الجمعة، جاء طالب إلى المسجد بدون غسل الجمعة. فما حكم تركه لغسل الجمعة؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٧. التحليل الفقهي لحالة الطالب هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q17" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) غسل الجمعة واجب وعصي بتركه</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q17" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) غسل الجمعة مستحب (سنة)، فتركه لا يُعصى به، لكنه فوّت فضيلة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q17" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) غسل الجمعة مكروه</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q17" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) غسل الجمعة حرام</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q17" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) غسل الجمعة واجب للرجال والنساء على حد سواء</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 18 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة:</p>
+                        <p class="text-gray-300 text-sm">
+                            طالب توضأ في المدرسة، ثم خرج العرق من جسده بشكل كثير. هل يجب عليه إعادة الوضوء؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٨. التحليل الفقهي لحالة الطالب وفق المذهب الشافعي هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q18" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) يجب إعادة الوضوء لأن العرق ينقض</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q18" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) لا يجب إعادة الوضوء لأن العرق ليس من نواقض الوضوء</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q18" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) يجب إعادة الوضوء إذا كان العرق كثيراً فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q18" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يستحب إعادة الوضوء فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q18" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب الغسل بدلاً من الوضوء</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 19 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> النص النظري:</p>
+                        <p class="text-gray-300 text-sm">
+                            قال الله تعالى: <strong class="text-luxury-goldlight">﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ وَامْسَحُوا بِرُءُوسِكُمْ وَأَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ﴾</strong> [المائدة: ٦]
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">١٩. من خلال تحليل الآية الكريمة، الاستنتاج الأصح حول أركان الوضوء هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q19" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) الآية تذكر فقط بعض الأركان، والنية والترتيب مستندان من السنة</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q19" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) الآية تذكر جميع أركان الوضوء بشكل صريح</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q19" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) الآية تلغي وجوب غسل القدمين</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q19" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) الآية خاصة بالرجال فقط</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q19" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) الآية خاصة بالصلاة فقط</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 20 -->
+                <div>
+                    <div class="case-box p-4 rounded-lg mb-4">
+                        <p class="text-luxury-goldlight text-sm font-semibold mb-2"><i class="fa-solid fa-lightbulb ml-1"></i> الحالة التكاملية:</p>
+                        <p class="text-gray-300 text-sm">
+                            طالب في مدرسة دينية ليمو جوراي استيقظ من النوم صباحاً، ووجد بللاً على ثيابه لكنه لا يتذكر أنه احتلم. تساءل: هل يجب عليه الغسل؟ وماذا لو كان البلل مجرد عرق؟
+                        </p>
+                    </div>
+                    <p class="text-white font-semibold mb-3">٢٠. التحليل الفقهي المتكامل للحالة هو...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q20" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">أ) يجب الغسل مطلقاً لأن البلل دليل على الاحتلام</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q20" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ب) إذا كان البلل يشبه المني (بالرائحة واللون والكثافة) وجب الغسل، وإلا فلا يجب</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q20" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">ج) لا يجب الغسل لأنه لم يتذكر الاحتلام</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q20" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">د) يكفي الوضوء في جميع الحالات</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q20" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">هـ) يجب التيمم بدلاً من الغسل</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bagian B: Essay HOTS -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10">
+            <div class="flex items-center justify-between mb-6 border-b border-luxury-gold/20 pb-4">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-pen-to-square text-luxury-gold"></i> القسم ب - أسئلة مقالية (HOTS)
+                </h3>
+                <span class="text-sm text-luxury-gold font-semibold">٥ أسئلة | ٢٠ نقطة/سؤال | المجموع: ١٠٠</span>
+            </div>
+            <p class="text-red-400 text-sm mb-6 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> املأ الاسم الكامل ورقم الطالب أولاً! كل سؤال مقالي vale ٢٠ نقطة. اعتمد على التحليل والاستدلال.</p>
+
+            <div class="space-y-8">
+                <div>
+                    <p class="text-white font-semibold mb-3">السؤال المقالي ١ (تحليل مقارن)</p>
+                    <div class="case-box p-4 rounded-lg mb-3">
+                        <p class="text-gray-300 text-sm">
+                            تغيّر رأي الإمام الشافعي من <strong>القول القديم</strong> في العراق إلى <strong>القول الجديد</strong> في مصر في عدة مسائل، منها مسألة لمس المرأة الأجنبية.
+                        </p>
+                    </div>
+                    <p class="text-gray-300 mb-3 text-sm">حلّل أسباب هذا التغيير، وقارن بين القولين في المسألة المذكورة، ثم استنتج المبدأ الأصولي الذي يمكن استخلاصه من هذا التغيير للطلاب في العصر الحديث!</p>
+                    <textarea rows="5" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="اكتب إجابتك هنا..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">السؤال المقالي ٢ (دراسة حالة مركبة)</p>
+                    <div class="case-box p-4 rounded-lg mb-3">
+                        <p class="text-gray-300 text-sm">
+                            سارة استيقظت صباحاً في يوم رمضان، ووجدت على ملابسها أثراً يشبه المني لكنها لا تتذكر الاحتلام. ثم توضأت للصلاة، ونسيت أن تغسل رجليها حتى بعد أن صلّت.
+                        </p>
+                    </div>
+                    <p class="text-gray-300 mb-3 text-sm">حلّل الحالة من ثلاث زوايا: (١) هل يجب عليها الغسل؟ (٢) هل صيامها صحيح؟ (٣) ما حكم صلاتها وماذا يجب عليها فعله؟ استند في إجابتك إلى أدلة من المذهب الشافعي!</p>
+                    <textarea rows="5" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="اكتب إجابتك هنا..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">السؤال المقالي ٣ (تقييم relevansi)</p>
+                    <div class="case-box p-4 rounded-lg mb-3">
+                        <p class="text-gray-300 text-sm">
+                            في العصر الرقمي، يواجه الطلاب كمّاً هائلاً من المعلومات عبر وسائل التواصل الاجتماعي، بعضها صحيح وبعضها الآخر أخبار كاذبة (hoaks).
+                        </p>
+                    </div>
+                    <p class="text-gray-300 mb-3 text-sm">قيّم كيف يمكن لمنهج الإمام الشافعي في <strong>الجرح والتعديل</strong> واختيار الأحاديث الصحيحة أن يُطبَّق في التعامل مع المعلومات الرقمية! اذكر ثلاثة تطبيقات عملية يمكن للطلاب في مدرسة دينية ليمو جوراي ممارستها!</p>
+                    <textarea rows="5" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="اكتب إجابتك هنا..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">السؤال المقالي ٤ (تحليل تكاملي)</p>
+                    <div class="case-box p-4 rounded-lg mb-3">
+                        <p class="text-gray-300 text-sm">
+                            في منطقة نائية، لا يوجد ماء إلا بقدر قليل جداً (١ لتر) لثلاثة طلاب يريدون الصلاة. في الوقت نفسه، الجو بارد جداً.
+                        </p>
+                    </div>
+                    <p class="text-gray-300 mb-3 text-sm">صمّم حلاً فقهياً متكاملاً لهذه الحالة، مع مراعاة: (١) كيفية توزيع الماء، (٢) هل يسقط الوضوء ويتيممون؟ (٣) ما الفرق بين الإرفاق في الوضوء والإسراف؟ (٤) ما الحكم لو كان أحدهم جنباً؟ استند إلى المذهب الشافعي!</p>
+                    <textarea rows="5" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="اكتب إجابتك هنا..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">السؤال المقالي ٥ (تقييم وإبداع)</p>
+                    <div class="case-box p-4 rounded-lg mb-3">
+                        <p class="text-gray-300 text-sm">
+                            بعض الطلاب في مدرسة دينية ليمو جوراي يستهينون بسنن الوضوء (مثل: البسملة، السواك، المضمضة، الاستنشاق) بحجة أنها ليست أركاناً.
+                        </p>
+                    </div>
+                    <p class="text-gray-300 mb-3 text-sm">اكتب مقالاً قصيراً (١٥٠-٢٠٠ كلمة) تبيّن فيه: (١) الفرق بين الركن والسنة في الوضوء، (٢) الحكمة من سنن الوضوء الصحية والروحية، (٣) خطة عملية لتشجيع الطلاب على المحافظة على سنن الوضوء في المدرسة!</p>
+                    <textarea rows="5" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="اكتب إجابتك هنا..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hasil & Aksi -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10 border-r-4 border-luxury-gold">
+            <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-chart-pie text-luxury-gold"></i> نتيجة الاختبار النصفي
+            </h3>
+            <p class="text-gray-300 mb-6">شكراً لإكمالك هذا الاختبار! تأكد من أن جميع البيانات قد تم ملؤها بشكل صحيح.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">نتيجة الاختيار من متعدد</p>
+                    <p class="text-2xl font-bold text-luxury-gold">٠/٢٠٠</p>
+                </div>
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">نتيجة المقالي</p>
+                    <p class="text-2xl font-bold text-luxury-gold">٠/١٠٠</p>
+                </div>
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">المجموع</p>
+                    <p class="text-2xl font-bold text-luxury-gold">٠/٣٠٠</p>
+                </div>
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">القيمة النهائية</p>
+                    <p class="text-2xl font-bold text-luxury-gold">٠</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button class="flex-1 bg-luxury-gold text-luxury-900 font-bold py-3 px-6 rounded-lg hover:bg-luxury-goldhover transition-all flex items-center justify-center gap-2 shadow-lg shadow-luxury-gold/20">
+                    <i class="fa-solid fa-paper-plane"></i> إرسال الإجابات ورؤية النتيجة
+                </button>
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i> تحميل PDF كامل
+                </button>
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-chart-simple"></i> تحميل النتيجة فقط
+                </button>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> إرسال بريد للمعلم
+                </button>
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-rotate-right"></i> البدء من جديد
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigasi Bawah -->
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-luxury-gold/20">
+            <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold w-full sm:w-auto justify-center">
+                <i class="fa-solid fa-house rtl-flip"></i> العودة إلى الرئيسية
+            </a>
+            <a href="7.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold w-full sm:w-auto justify-center">
+                <i class="fa-solid fa-book-open rtl-flip"></i> العودة إلى مادة اللقاء ٧
+            </a>
+            <a href="9.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-luxury-gold text-luxury-900 hover:bg-luxury-goldhover transition-all font-bold shadow-lg shadow-luxury-gold/20 w-full sm:w-auto justify-center">
+                الاستمرار إلى مادة اللقاء ٩ <i class="fa-solid fa-arrow-left rtl-flip"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-800 border-t border-luxury-gold/20 py-12 mt-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="text-right">
+                    <h3 class="text-2xl font-bold text-white mb-4">الفقه <span class="text-luxury-gold">للصف العاشر</span></h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        كتاب دراسي لطلاب المدارس العليا الإسلامية. يجمع بين النظرية والتطبيق في الفقه الشافعي.
+                    </p>
+                </div>
+                <div class="text-right">
+                    <h4 class="text-white font-bold mb-4">تواصل مع المؤلف</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center gap-2 justify-end"><i class="fa-solid fa-user text-luxury-gold"></i> أدي فاتما، ل.ق.، ماجستير في القانون</li>
+                        <li class="flex items-center gap-2 justify-end"><i class="fa-solid fa-school text-luxury-gold"></i> مدرسة دينية ليمو جوراي</li>
+                        <li class="flex items-center gap-2 justify-end"><i class="fa-solid fa-envelope text-luxury-gold"></i> adefatma310@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="text-right">
+                    <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-luxury-gold transition-colors">الرئيسية</a></li>
+                        <li><a href="index.html#kurikulum" class="hover:text-luxury-gold transition-colors">قائمة اللقاءات</a></li>
+                        <li><a href="index.html#penulis" class="hover:text-luxury-gold transition-colors">عن المؤلف</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-luxury-gold/10 pt-8 text-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; ٢٠٢٦ أدي فاتما، ل.ق.، ماجستير في القانون - مدرسة دينية ليمو جوراي. جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Formatif Bab 2 - الوضوء (Wudu) | Fikih Kelas X</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        luxury: {
+                            900: '#0B0F19',
+                            800: '#151B2B',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            goldhover: '#B5952F',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Arial', sans-serif;
+            line-height: 1.8;
+            font-size: 1.5rem;
+        }
+        /* Custom Radio Button Styling */
+        .custom-radio:checked + div {
+            border-color: #D4AF37;
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+        .custom-radio:checked + div .radio-dot {
+            background-color: #D4AF37;
+            border-color: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-luxury-900 text-gray-300 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2 text-gray-300 hover:text-luxury-gold transition-colors">
+                        <i class="fa-solid fa-book-quran text-luxury-gold"></i> 
+                        <span class="font-serif font-bold text-white">Fikih Kelas X</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-6 text-sm">
+                    <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors">Beranda</a>
+                    <a href="index.html#kurikulum" class="text-gray-400 hover:text-luxury-gold transition-colors">Daftar Bab</a>
+                    <a href="2.html" class="text-luxury-gold font-semibold">Materi Bab 2</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Header Uji Formatif -->
+        <div class="text-center mb-10">
+            <span class="inline-block px-4 py-1 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-sm font-semibold tracking-wider uppercase mb-4">
+                📋 Uji Formatif Bab 2
+            </span>
+            <h1 class="font-serif text-3xl lg:text-4xl font-bold text-white mb-4">
+                الوضوء (Wudu)
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed text-sm">
+                Materi: Pengertian wudu, dalil naqli, hukum wudu, rukun/fardhu wudu, perbandingan antar mazhab, dan contoh kasus.
+            </p>
+            <div class="flex justify-center gap-4 mt-4 text-sm text-luxury-gold font-semibold">
+                <span><i class="fa-regular fa-clock mr-1"></i> Waktu: Tidak terbatas</span>
+                <span>|</span>
+                <span><i class="fa-solid fa-star mr-1"></i> Total Skor: 200 poin</span>
+            </div>
+        </div>
+
+        <!-- Form Data Siswa -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10">
+            <h3 class="font-serif text-xl font-bold text-white mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-user-graduate text-luxury-gold"></i> Data Siswa
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">Nama Lengkap <span class="text-red-500">*</span></label>
+                    <input type="text" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="Masukkan nama lengkap">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">NIS <span class="text-red-500">*</span></label>
+                    <input type="text" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="Masukkan Nomor Induk Siswa">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">Tanggal Ujian</label>
+                    <input type="date" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-400 mb-2">Kelas <span class="text-red-500">*</span></label>
+                    <select class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors">
+                        <option value="">Pilih Kelas</option>
+                        <option value="X-1">Kelas X-1</option>
+                        <option value="X-2">Kelas X-2</option>
+                        <option value="X-3">Kelas X-3</option>
+                    </select>
+                </div>
+            </div>
+            <p class="text-xs text-gray-500 mt-4 italic">* Pastikan Nama Lengkap dan NIS diisi dengan benar sebelum mengerjakan soal Essay.</p>
+        </div>
+
+        <!-- Bagian A: Pilihan Ganda -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10">
+            <div class="flex items-center justify-between mb-6 border-b border-luxury-gold/20 pb-4">
+                <h3 class="font-serif text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-list-ol text-luxury-gold"></i> Bagian A – Pilihan Ganda
+                </h3>
+                <span class="text-sm text-luxury-gold font-semibold">10 Soal | 10 poin/soal | Total: 100</span>
+            </div>
+            <p class="text-red-400 text-sm mb-6 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> Lengkapi semua 10 soal pilihan ganda!</p>
+
+            <div class="space-y-8">
+                <!-- Soal 1 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">1. Secara etimologi, kata "al-wudhu'" berasal dari bahasa Arab yang berarti...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Mandi dan bersuci</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Keindahan/kecantikan dan kesucian</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Membersihkan kotoran</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q1" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Mengangkat hadas besar</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 2 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">2. Dalil utama kewajiban wudu terdapat dalam Al-Qur'an surah...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Al-Baqarah: 222</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) An-Nisa: 43</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Al-Ma'idah: 6</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q2" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Al-Anfal: 11</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 3 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">3. Menurut Mazhab Syafi'i, jumlah rukun wudu ada...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) 4 rukun</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) 5 rukun</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) 6 rukun</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q3" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) 7 rukun</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 4 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">4. Rukun wudu yang pertama dan paling utama adalah...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Membasuh wajah</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Niat</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Membasuh tangan</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q4" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Tertib</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 5 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">5. Menurut Mazhab Syafi'i, batas minimal mengusap kepala dalam wudu adalah...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Seluruh kepala</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Separuh kepala</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Sebagian kepala (minimal satu rambut)</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q5" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Tidak perlu mengusap kepala</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 6 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">6. Hukum wudu bagi seseorang yang hendak melaksanakan shalat fardhu adalah...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Sunnah</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Wajib</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Mubah</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q6" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Makruh</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 7 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">7. Menurut Mazhab Hanafi, niat dalam wudu hukumnya...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Rukun (wajib)</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Sunnah (tidak wajib)</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Haram</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q7" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Makruh</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 8 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">8. Air yang telah digunakan untuk berwudu sebelumnya (air musta'mal) menurut Mazhab Syafi'i hukumnya...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Suci dan mensucikan</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Suci tetapi tidak mensucikan</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Najis</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q8" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Mubah untuk digunakan kembali</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 9 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">9. Jika seseorang lupa mengusap kepala dan baru ingat setelah membasuh kaki, maka menurut Mazhab Syafi'i ia harus...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Melanjutkan shalat tanpa mengulang wudu</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Mengusap kepala saja tanpa mengulang wudu</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Mengulangi wudu dari awal karena tidak memenuhi rukun tertib</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q9" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Bertayammum sebagai pengganti</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Soal 10 -->
+                <div>
+                    <p class="text-white font-semibold mb-3">10. Hadits yang menyatakan "Tidak diterima shalat tanpa bersuci (thaharah)" diriwayatkan oleh...</p>
+                    <div class="space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">a) Imam Bukhari</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">b) Imam Muslim</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">c) Imam Abu Dawud</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <input type="radio" name="q10" class="hidden custom-radio">
+                            <div class="flex-1 bg-luxury-800 border border-luxury-gold/10 rounded-lg p-3 group-hover:border-luxury-gold/30 transition-all flex items-center gap-3">
+                                <div class="radio-dot w-4 h-4 rounded-full border-2 border-gray-500 transition-all"></div>
+                                <span class="text-gray-300">d) Imam Tirmidzi</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian B: Essay -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10">
+            <div class="flex items-center justify-between mb-6 border-b border-luxury-gold/20 pb-4">
+                <h3 class="font-serif text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-pen-to-square text-luxury-gold"></i> Bagian B – Essay
+                </h3>
+                <span class="text-sm text-luxury-gold font-semibold">5 Soal | 20 poin/soal | Total: 100</span>
+            </div>
+            <p class="text-red-400 text-sm mb-6 flex items-center gap-2"><i class="fa-solid fa-triangle-exclamation"></i> Isi Nama Lengkap dan NIS terlebih dahulu! Setiap soal essay bernilai 20 poin.</p>
+
+            <div class="space-y-8">
+                <div>
+                    <p class="text-white font-semibold mb-3">Soal Essay 1</p>
+                    <p class="text-gray-300 mb-3 text-sm">Jelaskan pengertian wudu secara etimologi dan terminologi, serta sebutkan dalil naqli utama tentang kewajiban wudu!</p>
+                    <textarea rows="4" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">Soal Essay 2</p>
+                    <p class="text-gray-300 mb-3 text-sm">Sebutkan dan jelaskan 6 rukun wudu menurut Mazhab Syafi'i secara berurutan!</p>
+                    <textarea rows="4" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">Soal Essay 3</p>
+                    <p class="text-gray-300 mb-3 text-sm">Jelaskan perbedaan pendapat antara Mazhab Syafi'i, Hanafi, dan Maliki tentang hukum niat dan tertib dalam wudu!</p>
+                    <textarea rows="4" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">Soal Essay 4</p>
+                    <p class="text-gray-300 mb-3 text-sm">Sebutkan empat kategori hukum wudu (wajib, sunnah, haram, makruh) beserta contoh konkretnya masing-masing!</p>
+                    <textarea rows="4" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div>
+                    <p class="text-white font-semibold mb-3">Soal Essay 5</p>
+                    <p class="text-gray-300 mb-3 text-sm">Seorang siswa berada di sekolah yang hanya memiliki air sedikit (1 liter). Analisislah apakah wudunya sah menurut Mazhab Syafi'i, dan jelaskan alasannya!</p>
+                    <textarea rows="4" class="w-full bg-luxury-800 border border-luxury-gold/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold transition-colors" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hasil & Aksi -->
+        <div class="glass-card rounded-2xl p-6 lg:p-8 mb-10 border-l-4 border-luxury-gold">
+            <h3 class="font-serif text-xl font-bold text-white mb-6 flex items-center gap-2">
+                <i class="fa-solid fa-chart-pie text-luxury-gold"></i> Hasil Uji Formatif
+            </h3>
+            <p class="text-gray-300 mb-6">Terima kasih telah menyelesaikan uji formatif ini! Pastikan semua data telah terisi dengan benar.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">Skor Pilihan Ganda</p>
+                    <p class="text-2xl font-bold text-luxury-gold">0/100</p>
+                </div>
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">Skor Essay</p>
+                    <p class="text-2xl font-bold text-luxury-gold">0/100</p>
+                </div>
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">Skor Total</p>
+                    <p class="text-2xl font-bold text-luxury-gold">0/200</p>
+                </div>
+                <div class="bg-luxury-800 p-4 rounded-lg text-center border border-luxury-gold/10">
+                    <p class="text-gray-400 text-xs uppercase tracking-wider mb-1">Nilai Akhir</p>
+                    <p class="text-2xl font-bold text-luxury-gold">0</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button class="flex-1 bg-luxury-gold text-luxury-900 font-bold py-3 px-6 rounded-lg hover:bg-luxury-goldhover transition-all flex items-center justify-center gap-2 shadow-lg shadow-luxury-gold/20">
+                    <i class="fa-solid fa-paper-plane"></i> KIRIM JAWABAN & LIHAT HASIL
+                </button>
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i> UNDUH PDF LENGKAP
+                </button>
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-chart-simple"></i> UNDUH SKOR SAJA
+                </button>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Kirim Email Guru
+                </button>
+                <button class="flex-1 bg-luxury-800 text-gray-300 font-semibold py-3 px-6 rounded-lg border border-luxury-gold/30 hover:bg-luxury-gold/10 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-rotate-right"></i> MULAI ULANG
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigasi Bawah -->
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-luxury-gold/20">
+            <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold w-full sm:w-auto justify-center">
+                <i class="fa-solid fa-house"></i> Kembali ke Beranda
+            </a>
+            <a href="2.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold w-full sm:w-auto justify-center">
+                <i class="fa-solid fa-book-open"></i> Kembali ke Materi Bab 2
+            </a>
+            <a href="3.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-luxury-gold text-luxury-900 hover:bg-luxury-goldhover transition-all font-bold shadow-lg shadow-luxury-gold/20 w-full sm:w-auto justify-center">
+                Lanjut ke Materi Bab 3 <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-800 border-t border-luxury-gold/20 py-12 mt-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Fikih <span class="text-luxury-gold">Kelas X</span></h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Buku daras untuk siswa Madrasah Aliyah. Memadukan teori, praktik, dan aplikasi fikih Mazhab Syafi'i yang relevan dengan tantangan zaman.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Kontak Penulis</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-user text-luxury-gold"></i> Ade Fatma, Lc., M.H.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-school text-luxury-gold"></i> MAS Diniyah Limo Jurai</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-luxury-gold"></i> adefatma310@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-luxury-gold transition-colors">Beranda</a></li>
+                        <li><a href="index.html#kurikulum" class="hover:text-luxury-gold transition-colors">Daftar Bab</a></li>
+                        <li><a href="index.html#penulis" class="hover:text-luxury-gold transition-colors">Tentang Penulis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-luxury-gold/10 pt-8 text-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 Ade Fatma, Lc., M.H. - MAS Diniyah Limo Jurai. Hak cipta dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
