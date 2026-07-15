@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 2 - الوضوء (Wudu) | Fikih Kelas X</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        luxury: {
+                            900: '#0B0F19',
+                            800: '#151B2B',
+                            700: '#1E293B',
+                            gold: '#D4AF37',
+                            goldlight: '#F3E5AB',
+                            goldhover: '#B5952F',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Arial', sans-serif;
+            line-height: 1.8;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-luxury-900 text-gray-300 font-sans antialiased selection:bg-luxury-gold selection:text-luxury-900">
+
+    <!-- Navbar Sederhana untuk Halaman Bab -->
+    <nav class="sticky top-0 z-50 bg-luxury-900/95 backdrop-blur-md border-b border-luxury-gold/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-2 text-gray-300 hover:text-luxury-gold transition-colors">
+                        <i class="fa-solid fa-arrow-left"></i> <span class="font-serif font-bold text-white">Fikih Kelas X</span>
+                    </a>
+                </div>
+                <div class="flex space-x-4 text-sm">
+                    <a href="index.html" class="text-gray-400 hover:text-luxury-gold transition-colors">Beranda</a>
+                    <a href="index.html#kurikulum" class="text-gray-400 hover:text-luxury-gold transition-colors">Daftar Bab</a>
+                    <a href="index.html#penulis" class="text-gray-400 hover:text-luxury-gold transition-colors">Penulis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Header Bab -->
+        <div class="mb-10 text-center">
+            <span class="inline-block px-4 py-1 rounded-full border border-luxury-gold/30 bg-luxury-gold/10 text-luxury-gold text-sm font-semibold tracking-wider uppercase mb-4">
+                Pertemuan 2
+            </span>
+            <h1 class="font-serif text-4xl lg:text-5xl font-bold text-white mb-4">
+                <span class="arabic-text text-luxury-gold block mb-2" dir="rtl">الوضوء</span>
+                Hakikat, Hukum, dan Rukun Wudu
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Konsep dasar wudu (bersuci dari hadas kecil), dalil naqli, hukum, rukun/fardhu, dan tata cara wudu menurut Mazhab Syafi'i. Memahami esensi thaharah sebagai syarat sah shalat.
+            </p>
+        </div>
+
+        <!-- Navigasi Cepat Bab -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold">
+                <i class="fa-solid fa-house"></i> Beranda
+            </a>
+            <a href="uji-formatif-2.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-luxury-gold text-luxury-900 hover:bg-luxury-goldhover transition-all font-bold shadow-lg shadow-luxury-gold/20">
+                <i class="fa-solid fa-clipboard-check"></i> Uji Formatif Bab 2
+            </a>
+            <a href="3.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold">
+                Bab Selanjutnya <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Isi Materi -->
+        <div class="space-y-10">
+            
+            <!-- A. Pengertian dan Hakikat Wudu -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="bg-luxury-gold text-luxury-900 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">A</span>
+                    Pengertian dan Hakikat Wudu
+                </h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed">
+                    <p>
+                        Secara <strong>etimologi</strong>, kata <em>"al-wudhu'"em> (الوضوء) berasal dari bahasa Arab yang berarti <strong>"al-husn"</strong> (keindahan/kecantikan) dan <em>"at-taharah"</em> (kesucian). Dinamakan demikian karena wudu membersihkan anggota tubuh dari kotoran yang tampak maupun yang tidak tampak, sehingga menjadikan pelakunya bersih dan indah.
+                    </p>
+                    <p>
+                        Secara <strong>terminologi</strong> (istilah syara'), wudu didefinisikan sebagai:
+                    </p>
+                    <div class="bg-luxury-800 border-l-4 border-luxury-gold p-4 rounded-r-lg">
+                        <p class="text-luxury-goldlight italic text-sm">
+                            "Menggunakan air yang suci dan mensucikan pada anggota tubuh tertentu (wajah, kedua tangan, kepala, dan kedua kaki) dengan tata cara yang khusus (sesuai syariat) untuk mengangkat hadas kecil."
+                        </p>
+                    </div>
+                    <p>
+                        Dalam perspektif pendidikan fikih, memahami wudu bukan sekadar menghafal tata cara, melainkan memahami:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-400">
+                        <li><strong class="text-white">Hakikat Thaharah:</strong> Wudu sebagai bagian dari thaharah (bersuci) yang merupakan syarat sah shalat.</li>
+                        <li><strong class="text-white">Dimensi Spiritual:</strong> Wudu tidak hanya membersihkan fisik, tetapi juga menjadi sarana penghapusan dosa-dosa kecil (kaffarah).</li>
+                        <li><strong class="text-white">Kedisiplinan Ibadah:</strong> Tata cara wudu yang sistematis mengajarkan kedisiplinan dan ketertiban dalam beribadah.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- B. Dalil Naqli tentang Wudu -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="bg-luxury-gold text-luxury-900 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">B</span>
+                    Dalil Naqli tentang Wudu
+                </h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed">
+                    <p>Kewajiban wudu didasarkan pada dalil-dalil berikut:</p>
+                    
+                    <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                        <h4 class="text-luxury-gold font-bold text-lg mb-3"><i class="fa-solid fa-book-quran mr-2"></i> Al-Qur'an</h4>
+                        <p class="arabic-text text-right text-luxury-goldlight mb-3" dir="rtl">
+                            يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى الْمَرَافِقِ وَامْسَحُوا بِرُءُوسِكُمْ وَأَرْجُلَكُمْ إِلَى الْكَعْبَيْنِ
+                        </p>
+                        <p class="text-sm text-gray-400 italic">
+                            "Wahai orang-orang yang beriman, apabila kamu hendak mengerjakan shalat, maka basuhlah mukamu dan tanganmu sampai dengan siku, dan sapulah kepalamu dan (basuh) kakimu sampai dengan kedua mata kaki." <strong class="text-white">(QS. Al-Ma'idah: 6)</strong>
+                        </p>
+                    </div>
+
+                    <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                        <h4 class="text-luxury-gold font-bold text-lg mb-3"><i class="fa-solid fa-mosque mr-2"></i> Hadits</h4>
+                        <p class="text-sm text-gray-400 mb-2">
+                            Rasulullah SAW bersabda:
+                        </p>
+                        <p class="arabic-text text-right text-luxury-goldlight mb-3" dir="rtl">
+                            لَا تُقْبَلُ صَلَاةٌ بِغَيْرِ طُهُورٍ
+                        </p>
+                        <p class="text-sm text-gray-400 italic">
+                            "Tidak diterima shalat tanpa bersuci (thaharah)." <strong class="text-white">(HR. Muslim)</strong>
+                        </p>
+                        <p class="text-sm text-gray-400 mt-4 mb-2">
+                            Beliau juga bersabda tentang keutamaan wudu:
+                        </p>
+                        <p class="arabic-text text-right text-luxury-goldlight mb-3" dir="rtl">
+                            أَلاَ أَدُلُّكُمْ عَلَى مَا يَمْحُو اللَّهُ بِهِ الْخَطَايَا وَيَرْفَعُ بِهِ الدَّرَجَاتِ
+                        </p>
+                        <p class="text-sm text-gray-400 italic">
+                            "Maukah aku tunjukkan kepada kalian sesuatu yang dengannya Allah menghapus dosa-dosa dan mengangkat derajat?" Mereka menjawab: "Mau, wahai Rasulullah." Beliau bersabda: "Menyempurnakan wudu dalam kondisi sulit..." <strong class="text-white">(HR. Muslim)</strong>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- C. Hukum Wudu -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="bg-luxury-gold text-luxury-900 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">C</span>
+                    Hukum Wudu
+                </h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed">
+                    <p>Hukum wudu dapat dibagi menjadi beberapa kategori:</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                            <h4 class="text-luxury-gold font-bold text-lg mb-2"><i class="fa-solid fa-check-circle mr-2"></i> Wajib</h4>
+                            <p class="text-sm text-gray-400">Wudu hukumnya <strong class="text-white">wajib</strong> bagi seseorang yang hendak melaksanakan shalat, baik shalat fardhu maupun shalat sunnah. Hal ini berdasarkan firman Allah SWT dan hadits Rasulullah SAW yang telah disebutkan.</p>
+                        </div>
+                        <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                            <h4 class="text-luxury-gold font-bold text-lg mb-2"><i class="fa-solid fa-star mr-2"></i> Sunnah</h4>
+                            <p class="text-sm text-gray-400">Wudu hukumnya <strong class="text-white">sunnah</strong> (dianjurkan) dalam kondisi tertentu, seperti: sebelum tidur, sebelum makan (jika dalam keadaan junub), ketika hendak berdzikir, dan ketika memperbarui wudu (tajdid al-wudhu').</p>
+                        </div>
+                        <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                            <h4 class="text-luxury-gold font-bold text-lg mb-2"><i class="fa-solid fa-ban mr-2"></i> Haram</h4>
+                            <p class="text-sm text-gray-400">Wudu hukumnya <strong class="text-white">haram</strong> jika menggunakan air yang haram (air curian, air hasil mencuri, dll.) atau jika berwudu dengan tujuan riya' (pamer) yang syirik.</p>
+                        </div>
+                        <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                            <h4 class="text-luxury-gold font-bold text-lg mb-2"><i class="fa-solid fa-circle-minus mr-2"></i> Makruh</h4>
+                            <p class="text-sm text-gray-400">Wudu hukumnya <strong class="text-white">makruh</strong> jika menggunakan air yang sangat panas atau sangat dingin yang dapat membahayakan tubuh, atau berwudu di tempat yang kotor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- D. Rukun/Fardhu Wudu -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="bg-luxury-gold text-luxury-900 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">D</span>
+                    Rukun/Fardhu Wudu
+                </h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed">
+                    <p>
+                        Menurut <strong>Mazhab Syafi'i</strong>, rukun wudu ada <strong>6 (enam)</strong>. Jika salah satu rukun tidak dipenuhi, maka wudunya tidak sah.
+                    </p>
+                    
+                    <ol class="list-decimal list-inside space-y-4 ml-4 mt-4">
+                        <li>
+                            <strong class="text-white">Niat</strong>
+                            <p class="text-sm text-gray-400 mt-1">Niat di dalam hati berbarengan dengan awal membasuh wajah. Niat wudu adalah <em>"Nawaitu raf'al hadatsil ashghari fardhan lillahi ta'ala"</em> (Saya niat mengangkat hadas kecil, fardhu karena Allah Ta'ala).</p>
+                        </li>
+                        <li>
+                            <strong class="text-white">Membasuh Wajah</strong>
+                            <p class="text-sm text-gray-400 mt-1">Membasuh seluruh wajah, dari batas tumbuhnya rambut kepala hingga bawah dagu, dan dari telinga kanan hingga telinga kiri.</p>
+                        </li>
+                        <li>
+                            <strong class="text-white">Membasuh Kedua Tangan sampai Siku</strong>
+                            <p class="text-sm text-gray-400 mt-1">Membasuh kedua tangan dari ujung jari hingga siku, termasuk siku itu sendiri.</p>
+                        </li>
+                        <li>
+                            <strong class="text-white">Mengusap Sebagian Kepala</strong>
+                            <p class="text-sm text-gray-400 mt-1">Mengusap sebagian kepala (minimal satu rambut). Menurut Mazhab Syafi'i, mengusap sebagian kepala sudah cukup, tidak harus seluruh kepala.</p>
+                        </li>
+                        <li>
+                            <strong class="text-white">Membasuh Kedua Kaki sampai Mata Kaki</strong>
+                            <p class="text-sm text-gray-400 mt-1">Membasuh kedua kaki dari ujung jari hingga mata kaki, termasuk mata kaki itu sendiri.</p>
+                        </li>
+                        <li>
+                            <strong class="text-white">Tertib (Berurutan)</strong>
+                            <p class="text-sm text-gray-400 mt-1">Melakukan rukun-rukun wudu secara berurutan, tidak boleh mendahulukan yang seharusnya diakhirkan.</p>
+                        </li>
+                    </ol>
+
+                    <div class="bg-luxury-800 border-l-4 border-luxury-gold p-4 rounded-r-lg mt-6">
+                        <p class="text-luxury-goldlight italic text-sm">
+                            <strong>Catatan Penting:</strong> Jika seseorang lupa mengusap sebagian kepala dan baru ingat setelah membasuh kaki, maka ia harus mengulangi wudunya dari awal karena tidak memenuhi rukun tertib.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- E. Analisis Tabel Perbandingan -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="bg-luxury-gold text-luxury-900 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">E</span>
+                    Analisis Perbandingan: Rukun Wudu Antar Mazhab
+                </h2>
+                <p class="text-gray-400 mb-6 text-sm">Memahami perbedaan pendapat antar mazhab dalam menentukan rukun wudu untuk memperluas wawasan fikih.</p>
+                
+                <div class="overflow-x-auto rounded-xl border border-luxury-gold/20">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-luxury-gold/10 text-luxury-gold">
+                                <th class="p-4 font-serif font-bold border-b border-luxury-gold/20">Rukun</th>
+                                <th class="p-4 font-serif font-bold border-b border-luxury-gold/20 text-center">Mazhab Syafi'i</th>
+                                <th class="p-4 font-serif font-bold border-b border-luxury-gold/20 text-center">Mazhab Hanafi</th>
+                                <th class="p-4 font-serif font-bold border-b border-luxury-gold/20 text-center">Mazhab Maliki</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300 text-sm">
+                            <tr class="border-b border-luxury-gold/10 hover:bg-luxury-700/50 transition-colors">
+                                <td class="p-4 font-semibold text-white">Niat</td>
+                                <td class="p-4 text-center">Rukun (wajib)</td>
+                                <td class="p-4 text-center">Sunnah (tidak wajib)</td>
+                                <td class="p-4 text-center">Rukun (wajib)</td>
+                            </tr>
+                            <tr class="border-b border-luxury-gold/10 hover:bg-luxury-700/50 transition-colors">
+                                <td class="p-4 font-semibold text-white">Membasuh Wajah</td>
+                                <td class="p-4 text-center">Rukun</td>
+                                <td class="p-4 text-center">Rukun</td>
+                                <td class="p-4 text-center">Rukun</td>
+                            </tr>
+                            <tr class="border-b border-luxury-gold/10 hover:bg-luxury-700/50 transition-colors">
+                                <td class="p-4 font-semibold text-white">Membasuh Tangan s/d Siku</td>
+                                <td class="p-4 text-center">Rukun</td>
+                                <td class="p-4 text-center">Rukun</td>
+                                <td class="p-4 text-center">Rukun</td>
+                            </tr>
+                            <tr class="border-b border-luxury-gold/10 hover:bg-luxury-700/50 transition-colors">
+                                <td class="p-4 font-semibold text-white">Mengusap Kepala</td>
+                                <td class="p-4 text-center">Rukun (sebagian)</td>
+                                <td class="p-4 text-center">Rukun (sebagian)</td>
+                                <td class="p-4 text-center">Rukun (seluruh kepala)</td>
+                            </tr>
+                            <tr class="border-b border-luxury-gold/10 hover:bg-luxury-700/50 transition-colors">
+                                <td class="p-4 font-semibold text-white">Membasuh Kaki s/d Mata Kaki</td>
+                                <td class="p-4 text-center">Rukun</td>
+                                <td class="p-4 text-center">Rukun</td>
+                                <td class="p-4 text-center">Rukun</td>
+                            </tr>
+                            <tr class="hover:bg-luxury-700/50 transition-colors">
+                                <td class="p-4 font-semibold text-white">Tertib</td>
+                                <td class="p-4 text-center">Rukun (wajib)</td>
+                                <td class="p-4 text-center">Sunnah (tidak wajib)</td>
+                                <td class="p-4 text-center">Rukun (wajib)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- F. Contoh Kasus dan Analisis -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="bg-luxury-gold text-luxury-900 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">F</span>
+                    Contoh Kasus dan Analisis
+                </h2>
+                <div class="space-y-6">
+                    
+                    <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                        <h4 class="text-luxury-gold font-bold text-lg mb-2">Kasus 1: Wudu dengan Air Terbatas</h4>
+                        <p class="text-sm text-gray-400 mb-3">
+                            <strong class="text-white">Situasi:</strong> Seorang siswa berada di sekolah yang hanya memiliki air sedikit (misalnya 1 liter). Ia ingin berwudu untuk shalat Dzuhur.
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            <strong class="text-white">Analisis:</strong> Menurut Mazhab Syafi'i, wudu tetap sah meskipun menggunakan air sedikit, asalkan semua rukun terpenuhi (wajah, tangan, kepala, kaki terbasuh). Namun, jika air tersebut hanya cukup untuk sebagian anggota tubuh, maka ia harus bertayammum. Dalam kasus ini, jika 1 liter cukup untuk membasuh semua anggota tubuh (meskipun sedikit), maka wudunya sah.
+                        </p>
+                    </div>
+
+                    <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                        <h4 class="text-luxury-gold font-bold text-lg mb-2">Kasus 2: Lupa Mengusap Sebagian Kepala</h4>
+                        <p class="text-sm text-gray-400 mb-3">
+                            <strong class="text-white">Situasi:</strong> Seseorang berwudu, lalu setelah membasuh kaki, ia baru ingat bahwa ia lupa mengusap sebagian kepala.
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            <strong class="text-white">Analisis:</strong> Menurut Mazhab Syafi'i, rukun wudu harus dilakukan secara tertib (berurutan). Jika seseorang lupa mengusap kepala dan baru ingat setelah membasuh kaki, maka ia harus mengulangi wudunya dari awal karena tidak memenuhi rukun tertib. Wudunya tidak sah, dan shalat yang dilakukannya batal.
+                        </p>
+                    </div>
+
+                    <div class="bg-luxury-800/50 p-5 rounded-xl border border-luxury-gold/10">
+                        <h4 class="text-luxury-gold font-bold text-lg mb-2">Kasus 3: Wudu dengan Air Bekas Wudu (Musta'mal)</h4>
+                        <p class="text-sm text-gray-400 mb-3">
+                            <strong class="text-white">Situasi:</strong> Seseorang berwudu menggunakan air yang telah digunakan untuk wudu sebelumnya (air musta'mal).
+                        </p>
+                        <p class="text-sm text-gray-400">
+                            <strong class="text-white">Analisis:</strong> Menurut Mazhab Syafi'i, air musta'mal (air yang telah digunakan untuk mengangkat hadas) hukumnya suci tetapi tidak mensucikan. Artinya, air tersebut tidak boleh digunakan untuk berwudu atau mandi wajib. Jika seseorang berwudu dengan air musta'mal, maka wudunya tidak sah.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- G. Poin Penting untuk Ujian -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8 border-l-4 border-luxury-gold">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <i class="fa-solid fa-star text-luxury-gold"></i>
+                    Poin Penting untuk Ujian
+                </h2>
+                <ul class="space-y-3 text-gray-300 text-sm">
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-1 text-luxury-gold mt-1"></i>
+                        <span><strong class="text-white">Hafalkan definisi wudu</strong> secara etimologi (keindahan/kesucian) dan terminologi (menggunakan air pada anggota tubuh tertentu untuk mengangkat hadas kecil).</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-2 text-luxury-gold mt-1"></i>
+                        <span><strong class="text-white">Kuasai dalil naqli utama:</strong> QS. Al-Ma'idah: 6 dan hadits "La tuqbalu shalatun bi ghayri thuhur" (HR. Muslim).</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-3 text-luxury-gold mt-1"></i>
+                        <span><strong class="text-white">Hafalkan 6 rukun wudu menurut Mazhab Syafi'i:</strong> Niat, membasuh wajah, membasuh tangan s/d siku, mengusap sebagian kepala, membasuh kaki s/d mata kaki, dan tertib.</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-4 text-luxury-gold mt-1"></i>
+                        <span><strong class="text-white">Pahami perbedaan hukum wudu:</strong> Wajib (untuk shalat), sunnah (sebelum tidur, dzikir), haram (air haram, riya'), dan makruh (air sangat panas/dingin).</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i class="fa-solid fa-5 text-luxury-gold mt-1"></i>
+                        <span><strong class="text-white">Siapkan contoh kasus:</strong> Wudu dengan air terbatas, lupa mengusap kepala, dan penggunaan air musta'mal.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- H. Relevansi untuk Siswa MAS Diniyah Limo Jurai -->
+            <section class="glass-card rounded-2xl p-6 lg:p-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-4 flex items-center gap-3">
+                    <span class="bg-luxury-gold text-luxury-900 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">H</span>
+                    Relevansi untuk Siswa
+                </h2>
+                <div class="space-y-4 text-gray-300 leading-relaxed">
+                    <p>
+                        Dalam konteks pembelajaran di <strong>MAS Diniyah Limo Jurai</strong>, memahami wudu memiliki urgensi khusus:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-400">
+                        <li><strong class="text-white">Pondasi Ibadah:</strong> Wudu adalah syarat sah shalat. Tanpa wudu yang sah, shalat tidak diterima oleh Allah SWT. Pemahaman yang benar tentang wudu menjadi fondasi ibadah sehari-hari.</li>
+                        <li><strong class="text-white">Kedisiplinan dan Ketertiban:</strong> Tata cara wudu yang sistematis (tertib) mengajarkan siswa tentang pentingnya kedisiplinan dan ketertiban dalam menjalankan ibadah.</li>
+                        <li><strong class="text-white">Kesadaran Lingkungan:</strong> Pembelajaran tentang penggunaan air dalam wudu (tidak boros) mengajarkan siswa untuk peduli terhadap lingkungan dan sumber daya alam.</li>
+                        <li><strong class="text-white">Moderasi Beragama:</strong> Memahami perbedaan pendapat antar mazhab tentang wudu mengajarkan siswa untuk toleran dan tidak fanatik terhadap satu pendapat saja.</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Navigasi Bawah -->
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 mt-12 pt-8 border-t border-luxury-gold/20">
+            <a href="index.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold w-full sm:w-auto justify-center">
+                <i class="fa-solid fa-house"></i> Kembali ke Beranda
+            </a>
+            <a href="uji-formatif-2.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-luxury-gold text-luxury-900 hover:bg-luxury-goldhover transition-all font-bold shadow-lg shadow-luxury-gold/20 w-full sm:w-auto justify-center">
+                <i class="fa-solid fa-pen-to-square"></i> Uji Formatif Bab 2
+            </a>
+            <a href="3.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10 transition-all font-semibold w-full sm:w-auto justify-center">
+                Bab Selanjutnya (Sunnah Wudu) <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-luxury-800 border-t border-luxury-gold/20 py-12 mt-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-4">Fikih <span class="text-luxury-gold">Kelas X</span></h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Buku daras untuk siswa Madrasah Aliyah. Memadukan teori, praktik, dan aplikasi fikih Mazhab Syafi'i yang relevan dengan tantangan zaman.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Kontak Penulis</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-user text-luxury-gold"></i> Ade Fatma, Lc., M.H.</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-school text-luxury-gold"></i> MAS Diniyah Limo Jurai</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-luxury-gold"></i> adefatma310@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-luxury-gold transition-colors">Beranda</a></li>
+                        <li><a href="index.html#kurikulum" class="hover:text-luxury-gold transition-colors">Daftar Bab</a></li>
+                        <li><a href="index.html#penulis" class="hover:text-luxury-gold transition-colors">Tentang Penulis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-luxury-gold/10 pt-8 text-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 Ade Fatma, Lc., M.H. - MAS Diniyah Limo Jurai. Hak cipta dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
